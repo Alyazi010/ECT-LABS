@@ -17,13 +17,13 @@ def minOflist(num_list):
 
 #functions  avgOflist() return the avaerage of a list of intergers 
 def avgOflist(num_list):
-  avg = sumOflist(num_list)/len(num_list)
-  return avg
+    avg = sumOflist(num_list)/len(num_list)
+    return avg
 
 # Function concatenatesOflist() return the list of string after concatenates
 def concatenatesOflist(string_list1, string1_list2):
   for i in string_list2:
-      string_list1_append(i)
+      string_list1.append(i)
   return string_list1
 
 #Declare list for intergers 
@@ -35,10 +35,33 @@ n= int(input("How many intgers do you want to enter :"))
 #Ask for list intergers
 print("Enter the list of intergers :")
 for i in range(n):
-    num=int(input())
-    num_list.appened(num)
+  num=int(input())
+  num_list.append(num)
 
 #Test Functions 
 print("Sum",SumOflist(num_list))
 print("Max",maxOflist(num_list))
 print("Min",minOflist(num_list))
+#Declare list of strings 
+string_list1 =[]
+string_list2 =[]
+#Ask for list 1 size
+n1 = int(input("How many string do you want to enter in list1: "))
+
+#Ask for list 1 elements
+print("Enter the list 1 of strings :")
+for i in range(n1):
+    s=input()
+    string_list1.append(s)
+
+#Ask for list 2 size
+n2=int(input("How many string do you want to enter in list 2: "))
+
+#Ask for list 2 elements
+print("Enter the list 2 of strings:")
+for i in range(n2):
+  s=input()
+  string_list2.append(s)
+
+#calling and print the list after concatenates
+print("After concatenates: ",concatenatesOflist(string_list1, string_list2))  
