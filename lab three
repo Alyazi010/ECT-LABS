@@ -28,18 +28,18 @@ list1.remove(Height)
 list1.remove(Gender)
 
 #display your name in captials letters followed by the number of characters in it.
-print(list1[0].capitlize(),",",len(list1[0]))
+print(list1[0].capitalize(),",",len(list1[0]))
 
 # if statement to chec if age is over 18 years old
 if(Age>18):
    print(list2[0].capitalize()+" is an ADULT.")
    
 # if Age is less than 18 then check Gender
-elif(list2[4]== "Female" or list2[4]=="F"):
+elif(list2[4]== "Female" or list2[4]=="F" or list2[4]=="f"):
   print(Name.capitalize()+ "is a Female.")
   
 # if Gender is male then check PlaceOfBirth
-elif(list2[5]=="UAE"):
+elif(list2[5]=="UAE" or list2[5]=="uae" or list2[5]=="abu dhbai"):
   print(list2[0].capitalize()+ "is a UAE resident.")
   
   #if not
