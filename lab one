@@ -1,0 +1,20 @@
+# function Sum() of two intetgers
+
+def Sum(x, y):
+  return x+y
+# functions Max() of two intetgers
+def Max(x, y):
+    if(x>y):
+      return x
+    else:
+      return y  
+# function Min() of two intetgers
+def Min(x ,y):
+    if(x<y):
+      return x 
+    else: 
+     return y 
+# Test functions Sum,Max for values 25 and 75
+print("Sum:",Sum(25, 75))     
+print("Max:",Max(25, 75))     
+print("Min:",Min(25, 75))     
