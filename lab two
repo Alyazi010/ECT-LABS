@@ -1,1 +1,57 @@
+info = []
 
+
+#Getting the user input 
+
+value = input("Enter your Student ID : ")
+info.append(value)
+
+value = input("Enter your name: ")
+info.append(value)
+
+value = input("Emter you age : ")
+info.append(value)
+
+value = input("Enter your weight : ")
+info.append(value)
+
+value = input("Enter your height: ")
+info.append(value)
+
+value = input("Enter your gender : ")
+info.append(value)
+
+value = input("Enter your place of birth : ")
+info.append(value)
+
+# Printing in the required format using the format() method 
+print("\nMy name is{}. I am {} old and I  am a {}. \n".format(info[1],info[2],info[5]))
+
+#printing the weight and height
+print(info[3],info[4])
+
+#displaying on newline
+print("\n")
+
+#Displaying place of birth, gender, height using reverse indexing
+print(info[-1],info[-2],info[-3])
+
+#making copy of the list using copy() method 
+listcopy = info.copy()
+#Displaying the copid list 
+print("\nList copy:\n", listcopy)
+
+#Deleting the values 
+del info[2]
+del info[-3]
+del info[-2]
+
+print("\n")
+
+#printing the resultant list 
+print(info)
+
+print("\n")
+
+#Capitalizing thename and displaying the character count 
+print(info[1].upper(), "",len(info[1]))
