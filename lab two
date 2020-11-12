@@ -1,0 +1,30 @@
+list1= []
+
+studentsId=input("Enter the studentId : ")
+Name = input("Enter the students Name :")
+Age = int(input("Enter the students Age : "))
+Weight = float(input("Enter the student Weight :"))
+Height = float(input("Enter the student Height :"))
+Gender = input("Enter the student Gender : ")
+PlaceOfBirth = input("Enter the students Place of birth :")
+list1 =[Name,Age,Weight,Height,Gender,PlaceOfBirth]
+print("\nMy name is {}. I am old and I am a {}".format(list1[0],list1[1],list1[4]))
+print("Place of Birth :".format(list1[5]))
+print("Gender:".format(list1[4]))
+print("Height :".format(list1[3]))
+list2 = list1.copy()
+list1.remove(Age)
+list1.remove(Height)
+list1.remove(Gender)
+print(list1[0].capitlize(),",",len(list1[0]))
+
+if(Age>18):
+   print(list2[0].capitalize()+" is an ADULT.")
+
+elif(list2[4]== "Female" or list2[4]=="F"):
+  print(Name.capitalize()+ "is a Female.")
+
+elif(list2[5]=="UAE"):
+  print(list2[0].capitalize()+ "is a UAE resident.")
+else:
+  print(list2[0].capitalize()+ " is NOT A UAE resident.")
