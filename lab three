@@ -1,1 +1,47 @@
+list1= []
+# ask for input StudentsId ,Name,Age,Weight,Height,Gender and PlaceOfBirth
+studentsId=input("Enter the studentId : ")
+Name = input("Enter the students Name :")
+Age = int(input("Enter the students Age : "))
+Weight = float(input("Enter the student Weight :"))
+Height = float(input("Enter the student Height :"))
+Gender = input("Enter the student Gender : ")
+PlaceOfBirth = input("Enter the students Place of birth :")
 
+#created a list for the input
+list1 =[Name,Age,Weight,Height,Gender,PlaceOfBirth]
+
+#use format method to display the following information
+print("\nMy name is {}. I am old and I am a {}".format(list1[0],list1[1],list1[4]))
+
+#displays your PlaceOfBirth,Gender,Height
+print("Place of Birth :".format(list1[5]))
+print("Gender:".format(list1[4]))
+print("Height :".format(list1[3]))
+
+#copy your list into another one.
+list2 = list1.copy()
+
+# remove Age,Height and Gender from the orginal list
+list1.remove(Age)
+list1.remove(Height)
+list1.remove(Gender)
+
+#display your name in captials letters followed by the number of characters in it.
+print(list1[0].capitlize(),",",len(list1[0]))
+
+# if statement to chec if age is over 18 years old
+if(Age>18):
+   print(list2[0].capitalize()+" is an ADULT.")
+   
+# if Age is less than 18 then check Gender
+elif(list2[4]== "Female" or list2[4]=="F"):
+  print(Name.capitalize()+ "is a Female.")
+  
+# if Gender is male then check PlaceOfBirth
+elif(list2[5]=="UAE"):
+  print(list2[0].capitalize()+ "is a UAE resident.")
+  
+  #if not
+else:
+  print(list2[0].capitalize()+ " is NOT A UAE resident.")
