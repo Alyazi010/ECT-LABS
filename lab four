@@ -1,1 +1,44 @@
+# functions SumOflist() return the sum of a list of integers
+def SumOflist(num_list):
+  Sum = 0
+  for i in range(len(num_list)):
+      Sum+=num_list[i]
+  return Sum
 
+# function maxOflist() return the maxiumum of a list of intergers 
+def maxOflist(num_list):
+  Max = max(num_list)
+  return Max
+
+# functions minOflist() return the minimum of list a of integers 
+def minOflist(num_list):
+  Min = min(num_list)
+  return Min
+
+#functions  avgOflist() return the avaerage of a list of intergers 
+def avgOflist(num_list):
+  avg = sumOflist(num_list)/len(num_list)
+  return avg
+
+# Function concatenatesOflist() return the list of string after concatenates
+def concatenatesOflist(string_list1, string1_list2):
+  for i in string_list2:
+      string_list1_append(i)
+  return string_list1
+
+#Declare list for intergers 
+num_list = []
+
+#Ask for list size
+n= int(input("How many intgers do you want to enter :"))
+
+#Ask for list intergers
+print("Enter the list of intergers :")
+for i in range(n):
+    num=int(input())
+    num_list.appened(num)
+
+#Test Functions 
+print("Sum",SumOflist(num_list))
+print("Max",maxOflist(num_list))
+print("Min",minOflist(num_list))
